@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud-apigateway/cloud-apigateway.iml" filepath="$PROJECT_DIR$/cloud-apigateway/cloud-apigateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-configclient/cloud-configclient.iml" filepath="$PROJECT_DIR$/cloud-configclient/cloud-configclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-configserver/cloud-configserver.iml" filepath="$PROJECT_DIR$/cloud-configserver/cloud-configserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-eurekaclient/cloud-eurekaclient.iml" filepath="$PROJECT_DIR$/cloud-eurekaclient/cloud-eurekaclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-eurekaserver/cloud-eurekaserver.iml" filepath="$PROJECT_DIR$/cloud-eurekaserver/cloud-eurekaserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-feignconsumer/cloud-feignconsumer.iml" filepath="$PROJECT_DIR$/cloud-feignconsumer/cloud-feignconsumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-helloapi/cloud-helloapi.iml" filepath="$PROJECT_DIR$/cloud-helloapi/cloud-helloapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-helloapi2/cloud-helloapi2.iml" filepath="$PROJECT_DIR$/cloud-helloapi2/cloud-helloapi2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-ribbonconsumer/cloud-ribbonconsumer.iml" filepath="$PROJECT_DIR$/cloud-ribbonconsumer/cloud-ribbonconsumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudparent.iml" filepath="$PROJECT_DIR$/cloudparent.iml" />
+    </modules>
+  </component>
+</project>

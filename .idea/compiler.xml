@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-apigateway" />
+        <module name="cloud-configclient" />
+        <module name="cloud-configserver" />
+        <module name="cloud-eurekaclient" />
+        <module name="cloud-eurekaserver" />
+        <module name="cloud-feignconsumer" />
+        <module name="cloud-helloapi" />
+        <module name="cloud-helloapi2" />
+        <module name="cloud-ribbonconsumer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-apigateway" target="1.8" />
+      <module name="cloud-configclient" target="1.8" />
+      <module name="cloud-configserver" target="1.8" />
+      <module name="cloud-eurekaclient" target="1.8" />
+      <module name="cloud-eurekaserver" target="1.8" />
+      <module name="cloud-feignconsumer" target="1.8" />
+      <module name="cloud-helloapi" target="1.8" />
+      <module name="cloud-helloapi2" target="1.8" />
+      <module name="cloud-ribbonconsumer" target="1.8" />
+      <module name="cloudeurekaserver" target="1.8" />
+      <module name="cloudhelloapi" target="1.7" />
+      <module name="cloudparent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
