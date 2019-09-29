@@ -28,6 +28,8 @@
         <module>cloud-apigateway</module>
         <module>cloud-configserver</module>
         <module>cloud-configclient</module>
+        <module>cloud-trace1</module>
+        <module>cloud-trace2</module>
     </modules>
 
     <dependencyManagement>
