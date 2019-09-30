@@ -34,17 +34,17 @@
         </encoder>
     </appender>
 
-    <appender name="flatfile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${LOG_FILE}.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}.log</fileNamePattern>
-            <maxHistory>7</maxHistory>
-        </rollingPolicy>
-        <encoder>
-            <pattern>${CONSOLE_LOG_PATTERN1}</pattern>
-            <charset>utf8</charset>
-        </encoder>
-    </appender>
+    <!--<appender name="flatfile" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+        <!--<file>${LOG_FILE}.log</file>-->
+        <!--<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+            <!--<fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}.log</fileNamePattern>-->
+            <!--<maxHistory>7</maxHistory>-->
+        <!--</rollingPolicy>-->
+        <!--<encoder>-->
+            <!--<pattern>${CONSOLE_LOG_PATTERN1}</pattern>-->
+            <!--<charset>utf8</charset>-->
+        <!--</encoder>-->
+    <!--</appender>-->
 
     <!-- Appender to log to file in a JSON format -->
     <appender name="logstash" class="ch.qos.logback.core.rolling.RollingFileAppender">
@@ -79,7 +79,7 @@
     </appender>
 
     <root level="INFO">
-        <appender-ref ref="flatfile" />
+        <!--<appender-ref ref="flatfile" />-->
         <appender-ref ref="console"/>
         <appender-ref ref="logstash"/>
 

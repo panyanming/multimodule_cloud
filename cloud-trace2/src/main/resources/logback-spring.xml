@@ -34,17 +34,24 @@
         </encoder>
     </appender>
 
-    <appender name="flatfile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${LOG_FILE}.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}.log</fileNamePattern>
-            <maxHistory>7</maxHistory>
-        </rollingPolicy>
-        <encoder>
-            <pattern>${CONSOLE_LOG_PATTERN1}</pattern>
-            <charset>utf8</charset>
-        </encoder>
-    </appender>
+    <!--<appender name="flatfile" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+        <!--<file>${LOG_FILE}.log</file>-->
+        <!--<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+            <!--<fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}.log</fileNamePattern>-->
+            <!--<maxHistory>7</maxHistory>-->
+        <!--</rollingPolicy>-->
+        <!--<encoder>-->
+            <!--<pattern>${CONSOLE_LOG_PATTERN1}</pattern>-->
+            <!--<charset>utf8</charset>-->
+        <!--</encoder>-->
+    <!--</appender>-->
+
+    <!--<appender name="stash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">-->
+        <!--<destination>192.168.198.129:18081</destination>-->
+
+        <!--&lt;!&ndash; encoder is required &ndash;&gt;-->
+        <!--<encoder class="net.logstash.logback.encoder.LogstashEncoder" />-->
+    <!--</appender>-->
 
     <!-- Appender to log to file in a JSON format -->
     <appender name="logstash" class="ch.qos.logback.core.rolling.RollingFileAppender">
@@ -79,9 +86,10 @@
     </appender>
 
     <root level="INFO">
-        <appender-ref ref="flatfile" />
+        <!--<appender-ref ref="flatfile" />-->
         <appender-ref ref="console"/>
         <appender-ref ref="logstash"/>
+        <!--<appender-ref ref="stash" />-->
 
     </root>
 </configuration>
