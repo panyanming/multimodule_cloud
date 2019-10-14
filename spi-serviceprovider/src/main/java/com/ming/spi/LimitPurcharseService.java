@@ -2,7 +2,6 @@ package com.ming.spi;
 
 import com.ming.spi.spi.LimitPurcharse;
 
-import java.util.Dictionary;
 import java.util.Iterator;
 import java.util.ServiceConfigurationError;
 import java.util.ServiceLoader;

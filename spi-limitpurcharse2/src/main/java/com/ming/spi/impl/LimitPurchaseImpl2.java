@@ -1,4 +1,4 @@
-package com.ming.spi;
+package com.ming.spi.impl;
 
 import com.ming.spi.spi.LimitPurcharse;
 
