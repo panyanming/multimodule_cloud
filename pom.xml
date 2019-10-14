@@ -30,6 +30,9 @@
         <module>cloud-configclient</module>
         <module>cloud-trace1</module>
         <module>cloud-trace2</module>
+        <module>spi-serviceprovider</module>
+        <module>spi-limitpurcharse1</module>
+        <module>spi-limitpurcharse2</module>
     </modules>
 
     <dependencyManagement>

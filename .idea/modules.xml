@@ -14,6 +14,9 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-trace1/cloud-trace1.iml" filepath="$PROJECT_DIR$/cloud-trace1/cloud-trace1.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-trace2/cloud-trace2.iml" filepath="$PROJECT_DIR$/cloud-trace2/cloud-trace2.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloudparent.iml" filepath="$PROJECT_DIR$/cloudparent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spi-limitpurcharse1/spi-limitpurcharse1.iml" filepath="$PROJECT_DIR$/spi-limitpurcharse1/spi-limitpurcharse1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spi-limitpurcharse2/spi-limitpurcharse2.iml" filepath="$PROJECT_DIR$/spi-limitpurcharse2/spi-limitpurcharse2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spi-serviceprovider/spi-serviceprovider.iml" filepath="$PROJECT_DIR$/spi-serviceprovider/spi-serviceprovider.iml" />
     </modules>
   </component>
 </project>

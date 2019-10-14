@@ -17,6 +17,9 @@
         <module name="cloud-ribbonconsumer" />
         <module name="cloud-trace1" />
         <module name="cloud-trace2" />
+        <module name="spi-limitpurcharse1" />
+        <module name="spi-limitpurcharse2" />
+        <module name="spi-serviceprovider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -34,6 +37,9 @@
       <module name="cloudeurekaserver" target="1.8" />
       <module name="cloudhelloapi" target="1.7" />
       <module name="cloudparent" target="1.8" />
+      <module name="spi-limitpurcharse1" target="1.8" />
+      <module name="spi-limitpurcharse2" target="1.8" />
+      <module name="spi-serviceprovider" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

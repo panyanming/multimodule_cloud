@@ -2,6 +2,7 @@ package com.ming.eurekaclient.controller;
 
 
 import com.ming.helloapi2.dto.User;
+import com.ming.spi.LimitPurcharseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -27,11 +28,16 @@ public class RefactorHelloController implements com.ming.helloapi2.service.Hello
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println(""+instance.getHost()+" "+instance.getPort()+" 访问了服务");
+        System.out.println(""+instance.getHost()+" "+instance.getPort()+" 被访问");
         return "Hello"+name;
     }
 
     public User hello(@RequestHeader("name") String name, @RequestHeader("age") Integer age) {
+
+        LimitPurcharseService service = LimitPurcharseService.getInstance();
+        boolean checkLimit = service.checkLimit(1, 2);
+        System.out.println("checkLimit:"+checkLimit);
+
         return new User(name,age);
     }
 
