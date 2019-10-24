@@ -2,6 +2,7 @@ package com.ming.eurekaclient.controller;
 
 
 import com.ming.eurekaclient.PrintService;
+import com.ming.eurekaclient.serivce.IWrite;
 import com.ming.helloapi2.dto.User;
 import com.ming.spi.LimitPurcharseService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,16 +13,36 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
+
 @RestController
 public class RefactorHelloController implements com.ming.helloapi2.service.HelloService {
 
     @Autowired
     DiscoveryClient discoveryClient;
 
+    @Autowired
+    IWrite consoleWrite;
+
+    @Resource(name = "logWrite")
+    IWrite logWrite;
+
+    @Autowired
+    IWrite writeSame;
+
+    @Autowired
+    IWrite writeSame1;
+
     public String hello(@RequestParam("name") String name) {
 
         PrintService printService = PrintService.getInstance();
         printService.print();
+
+        logWrite.write();
+        consoleWrite.write();
+
+        writeSame.write();
+        writeSame1.write();
 
         ServiceInstance instance = discoveryClient.getInstances("hello-service").get(0);
 //        int sleepTime = new Random().nextInt(3000);
