@@ -5,11 +5,13 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-apigateway/cloud-apigateway.iml" filepath="$PROJECT_DIR$/cloud-apigateway/cloud-apigateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-configclient/cloud-configclient.iml" filepath="$PROJECT_DIR$/cloud-configclient/cloud-configclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-configserver/cloud-configserver.iml" filepath="$PROJECT_DIR$/cloud-configserver/cloud-configserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-dao/cloud-dao.iml" filepath="$PROJECT_DIR$/cloud-dao/cloud-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-eurekaclient/cloud-eurekaclient.iml" filepath="$PROJECT_DIR$/cloud-eurekaclient/cloud-eurekaclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-eurekaserver/cloud-eurekaserver.iml" filepath="$PROJECT_DIR$/cloud-eurekaserver/cloud-eurekaserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-feignconsumer/cloud-feignconsumer.iml" filepath="$PROJECT_DIR$/cloud-feignconsumer/cloud-feignconsumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-helloapi/cloud-helloapi.iml" filepath="$PROJECT_DIR$/cloud-helloapi/cloud-helloapi.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-helloapi2/cloud-helloapi2.iml" filepath="$PROJECT_DIR$/cloud-helloapi2/cloud-helloapi2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-model/cloud-model.iml" filepath="$PROJECT_DIR$/cloud-model/cloud-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-ribbonconsumer/cloud-ribbonconsumer.iml" filepath="$PROJECT_DIR$/cloud-ribbonconsumer/cloud-ribbonconsumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-trace1/cloud-trace1.iml" filepath="$PROJECT_DIR$/cloud-trace1/cloud-trace1.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-trace2/cloud-trace2.iml" filepath="$PROJECT_DIR$/cloud-trace2/cloud-trace2.iml" />

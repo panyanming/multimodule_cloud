@@ -18,6 +18,8 @@
         <option value="$PROJECT_DIR$/spi-serviceprovider/pom.xml" />
         <option value="$PROJECT_DIR$/spi-limitpurcharse1/pom.xml" />
         <option value="$PROJECT_DIR$/spi-limitpurcharse2/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-model/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-dao/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

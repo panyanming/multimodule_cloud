@@ -9,11 +9,13 @@
         <module name="cloud-apigateway" />
         <module name="cloud-configclient" />
         <module name="cloud-configserver" />
+        <module name="cloud-dao" />
         <module name="cloud-eurekaclient" />
         <module name="cloud-eurekaserver" />
         <module name="cloud-feignconsumer" />
         <module name="cloud-helloapi" />
         <module name="cloud-helloapi2" />
+        <module name="cloud-model" />
         <module name="cloud-ribbonconsumer" />
         <module name="cloud-trace1" />
         <module name="cloud-trace2" />
@@ -26,11 +28,13 @@
       <module name="cloud-apigateway" target="1.8" />
       <module name="cloud-configclient" target="1.8" />
       <module name="cloud-configserver" target="1.8" />
+      <module name="cloud-dao" target="1.8" />
       <module name="cloud-eurekaclient" target="1.8" />
       <module name="cloud-eurekaserver" target="1.8" />
       <module name="cloud-feignconsumer" target="1.8" />
       <module name="cloud-helloapi" target="1.8" />
       <module name="cloud-helloapi2" target="1.8" />
+      <module name="cloud-model" target="1.8" />
       <module name="cloud-ribbonconsumer" target="1.8" />
       <module name="cloud-trace1" target="1.8" />
       <module name="cloud-trace2" target="1.8" />

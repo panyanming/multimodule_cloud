@@ -33,6 +33,8 @@
         <module>spi-serviceprovider</module>
         <module>spi-limitpurcharse1</module>
         <module>spi-limitpurcharse2</module>
+        <module>cloud-model</module>
+        <module>cloud-dao</module>
     </modules>
 
     <dependencyManagement>
