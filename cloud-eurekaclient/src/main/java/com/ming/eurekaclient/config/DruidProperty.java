@@ -6,9 +6,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
-//@Component
-//@ConfigurationProperties(prefix = "spring.datasource.druid")
-//@PropertySource("classpath:druid.properties")
+@Component
+@ConfigurationProperties(prefix = "spring.datasource.druid")
+@PropertySource("classpath:druid.properties")
 public class DruidProperty {
     private final Logger logger = LoggerFactory.getLogger(DruidProperty.class);
 
