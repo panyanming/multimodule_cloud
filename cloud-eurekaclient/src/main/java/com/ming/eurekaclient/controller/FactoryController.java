@@ -1,8 +1,10 @@
 package com.ming.eurekaclient.controller;
 
 import com.ming.eurekaclient.serivce.IFactorySerivce;
+import com.ming.eurekaclient.serivce.ISortService;
 import com.ming.model.Book;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -33,4 +35,15 @@ public class FactoryController {
         book.setName("book1");
         book.setPrice(0.01);
     }
+
+    @Autowired
+    ISortService sortService;
+
+    @RequestMapping(value = "testSort.do")
+    @ResponseBody
+    public void testSort() {
+        sortService.execute(2);
+    }
+
+
 }

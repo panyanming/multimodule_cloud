@@ -1,6 +1,8 @@
 package com.ming.eurekaclient;
 
 import com.ming.eurekaclient.serivce.IFactorySerivce;
+import com.ming.eurekaclient.serivce.ISortService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,4 +24,15 @@ public class FactoryBeanAppConfig {
     public IFactorySerivce factorySerivce(MyBeanFactory factoryServiceProxy) throws Exception {
         return (IFactorySerivce) factoryServiceProxy.getObject();
     }
+
+
+    @Autowired
+    ApplicationContext applicationContext;
+
+    @Bean
+    public ISortService sortService() throws Exception {
+        MyBeanFactory<Object> objectMyBeanFactory = new MyBeanFactory<>(applicationContext, ISortService.class);
+        return  (ISortService)objectMyBeanFactory .getObject();
+    }
+
 }
