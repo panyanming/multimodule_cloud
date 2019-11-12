@@ -42,7 +42,7 @@ public class FactoryController {
     @RequestMapping(value = "testSort.do")
     @ResponseBody
     public void testSort() {
-        sortService.execute(4);
+        sortService.execute(5);
     }
 
 
