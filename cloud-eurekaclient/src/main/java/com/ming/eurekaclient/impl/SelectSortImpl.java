@@ -15,12 +15,13 @@ public class SelectSortImpl implements ISortService {
 
     @Override
     public void sort() {
-        System.out.println("快速排序,时间复杂度是O(nlogn)");
+        System.out.println("选择排序,时间复杂度是O(n^2)");
         int arr[] = new int[]{3, 8, 7, 9, 6, 10, 2, 5};
         selectionSort(arr);
         for (int i : arr) {
             System.out.print(i + " ");
         }
+        System.out.println("");
     }
 
     private void selectionSort(int[] arr) {

@@ -42,8 +42,29 @@ public class FactoryController {
     @RequestMapping(value = "testSort.do")
     @ResponseBody
     public void testSort() {
-        sortService.execute(5);
+        sortService.execute(EnumSortType.MergeSort.getValue());
+        sortService.execute(EnumSortType.QuickSort.getValue());
+        sortService.execute(EnumSortType.InsertSort.getValue());
+        sortService.execute(EnumSortType.SelectionSort.getValue());
+        sortService.execute(EnumSortType.HeapSort.getValue());
     }
 
+
+    private enum EnumSortType{
+        MergeSort(1),QuickSort(2),InsertSort(3),SelectionSort(4),HeapSort(5);
+        private int value;
+
+        EnumSortType(int value) {
+            this.value = value;
+        }
+
+        public int getValue() {
+            return value;
+        }
+
+        public void setValue(int value) {
+            this.value = value;
+        }
+    }
 
 }

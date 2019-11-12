@@ -22,6 +22,7 @@ public class InsertSortImpl implements ISortService {
         for (int i : arr) {
             System.out.print(i + " ");
         }
+        System.out.println("");
     }
 
     private void insertSort(int[] arr) {

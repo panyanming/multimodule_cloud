@@ -23,6 +23,7 @@ public class QuickSortImpl implements ISortService {
         for (int i : arr) {
             System.out.print(i + " ");
         }
+        System.out.println("");
     }
 
 

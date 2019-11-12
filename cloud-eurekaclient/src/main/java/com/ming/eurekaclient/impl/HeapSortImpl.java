@@ -21,6 +21,7 @@ public class HeapSortImpl implements ISortService {
         for (int i : arr) {
             System.out.print(i + " ");
         }
+        System.out.println("");
     }
 
     private void heapSort(int[] arr) {
