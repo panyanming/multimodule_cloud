@@ -21,4 +21,10 @@ public class CategoryServiceImpl implements ICategoryService {
         Category category = categoryMapper.selectByPrimaryKey(1);
         return category.getCategoryid();
     }
+
+    @Override
+    public int insert(Category category) {
+        int insert = categoryMapper.insert(category);
+        return insert;
+    }
 }

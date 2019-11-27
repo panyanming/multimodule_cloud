@@ -104,10 +104,10 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.ming.model.Category">
-    insert into Category (CategoryId, Name, Level,
+    insert into Category ( Name, Level,
     Parent, CreateDate, Creator,
     sequence, status)
-    values (#{categoryid,jdbcType=INTEGER}, #{name,jdbcType=NVARCHAR}, #{level,jdbcType=INTEGER},
+    values ( #{name,jdbcType=NVARCHAR}, #{level,jdbcType=INTEGER},
     #{parent,jdbcType=INTEGER}, #{createdate,jdbcType=TIMESTAMP}, #{creator,jdbcType=INTEGER},
     #{sequence,jdbcType=INTEGER}, #{status,jdbcType=INTEGER})
   </insert>
