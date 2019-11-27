@@ -72,11 +72,11 @@
 			<artifactId>druid</artifactId>
 			<version>1.0.22</version>
 		</dependency>
-		<dependency>
-			<groupId>com.ming.dao</groupId>
-			<artifactId>cloud-dao</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>com.ming.dao</groupId>-->
+			<!--<artifactId>cloud-dao</artifactId>-->
+			<!--<version>0.0.1-SNAPSHOT</version>-->
+		<!--</dependency>-->
 		<dependency>
 			<groupId>com.microsoft.sqlserver</groupId>
 			<artifactId>mssql-jdbc</artifactId>
@@ -86,7 +86,11 @@
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>com.ming.service</groupId>
+			<artifactId>cloud-service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>

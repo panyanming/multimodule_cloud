@@ -10,7 +10,7 @@ import org.springframework.context.annotation.FilterType;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-@ComponentScan(excludeFilters = {@ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = WriteSame.class)})
+@ComponentScan(basePackages = {"com.ming.service,com.ming.eurekaclient"},excludeFilters = {@ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = WriteSame.class)})
 @MapperScan("com.ming.dao")
 public class CloudEurekaclientApplication {
 

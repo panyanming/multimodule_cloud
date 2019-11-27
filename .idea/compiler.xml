@@ -17,6 +17,7 @@
         <module name="cloud-helloapi2" />
         <module name="cloud-model" />
         <module name="cloud-ribbonconsumer" />
+        <module name="cloud-service" />
         <module name="cloud-trace1" />
         <module name="cloud-trace2" />
         <module name="spi-limitpurcharse1" />
@@ -36,6 +37,7 @@
       <module name="cloud-helloapi2" target="1.8" />
       <module name="cloud-model" target="1.8" />
       <module name="cloud-ribbonconsumer" target="1.8" />
+      <module name="cloud-service" target="1.8" />
       <module name="cloud-trace1" target="1.8" />
       <module name="cloud-trace2" target="1.8" />
       <module name="cloudeurekaserver" target="1.8" />

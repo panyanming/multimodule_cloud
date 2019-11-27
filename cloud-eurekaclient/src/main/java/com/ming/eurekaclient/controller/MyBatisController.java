@@ -1,9 +1,6 @@
 package com.ming.eurekaclient.controller;
 
-import com.alibaba.fastjson.JSON;
-import com.ming.dao.CategoryMapper;
-import com.ming.model.Category;
-import com.ming.model.CategoryExample;
+import com.ming.service.service.ICategoryService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -19,9 +16,11 @@ import java.util.List;
 @Controller
 public class MyBatisController {
 
-    @Resource
-    private CategoryMapper categoryMapper;
+//    @Resource
+//    private CategoryMapper categoryMapper;
 
+    @Resource
+    private ICategoryService categoryService;
 
     @RequestMapping(value = "testMapper.do")
     @ResponseBody
@@ -29,13 +28,15 @@ public class MyBatisController {
 //        categoryMapper.deleteByPrimaryKey(252);
 //        return  "";
 
-        CategoryExample categoryExample = new CategoryExample();
-        CategoryExample.Criteria criteria = categoryExample.createCriteria();
-        criteria.andCategoryidEqualTo(1);
-
-        List<Category> categories = categoryMapper.selectByExample(categoryExample);
-        String s = JSON.toJSONString(categories);
-        return s;
+//        CategoryExample categoryExample = new CategoryExample();
+//        CategoryExample.Criteria criteria = categoryExample.createCriteria();
+//        criteria.andCategoryidEqualTo(1);
+//
+//        List<Category> categories = categoryMapper.selectByExample(categoryExample);
+//        String s = JSON.toJSONString(categories);
+//        returns;
+        int byId = categoryService.getById(1);
+        return byId + "";
     }
 
 }

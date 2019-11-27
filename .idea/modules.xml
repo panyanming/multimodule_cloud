@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-helloapi2/cloud-helloapi2.iml" filepath="$PROJECT_DIR$/cloud-helloapi2/cloud-helloapi2.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-model/cloud-model.iml" filepath="$PROJECT_DIR$/cloud-model/cloud-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-ribbonconsumer/cloud-ribbonconsumer.iml" filepath="$PROJECT_DIR$/cloud-ribbonconsumer/cloud-ribbonconsumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-service/cloud-service.iml" filepath="$PROJECT_DIR$/cloud-service/cloud-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-trace1/cloud-trace1.iml" filepath="$PROJECT_DIR$/cloud-trace1/cloud-trace1.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-trace2/cloud-trace2.iml" filepath="$PROJECT_DIR$/cloud-trace2/cloud-trace2.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloudparent.iml" filepath="$PROJECT_DIR$/cloudparent.iml" />

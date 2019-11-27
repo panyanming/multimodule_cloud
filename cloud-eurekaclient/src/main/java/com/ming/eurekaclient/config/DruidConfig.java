@@ -1,13 +1,15 @@
 package com.ming.eurekaclient.config;
 
+
+
+//public class DruidConfig {}
+
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
@@ -66,8 +68,8 @@ public class DruidConfig {
         ServletRegistrationBean bean = new ServletRegistrationBean(new StatViewServlet(), "/druid/*");
         Map<String,String> initParams = new HashMap<>();
 
-        initParams.put("loginUsername",druidproperty.getLoginUsername());
-        initParams.put("loginPassword",druidproperty.getLoginPassword());
+        initParams.put("loginUsername","admin");
+        initParams.put("loginPassword","123!@#QWE*()");
         initParams.put("allow","");//默认就是允许所有访问
         initParams.put("deny","192.168.15.21");
 
