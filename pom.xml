@@ -35,6 +35,7 @@
         <module>spi-limitpurcharse2</module>
         <module>cloud-model</module>
         <module>cloud-dao</module>
+        <module>cloud-service</module>
     </modules>
 
     <dependencyManagement>

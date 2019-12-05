@@ -4,22 +4,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-eurekaserver/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-eurekaclient/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-ribbonconsumer/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-feignconsumer/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-helloapi/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-helloapi2/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-apigateway/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-configserver/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-configclient/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-trace1/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-trace2/pom.xml" />
-        <option value="$PROJECT_DIR$/spi-serviceprovider/pom.xml" />
-        <option value="$PROJECT_DIR$/spi-limitpurcharse1/pom.xml" />
-        <option value="$PROJECT_DIR$/spi-limitpurcharse2/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-model/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-dao/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-service/pom.xml" />
       </list>
     </option>
