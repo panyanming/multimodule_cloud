@@ -1,6 +1,7 @@
 package com.ming.eurekaclient.controller;
 
 import com.ming.eurekaclient.serivce.IFactorySerivce;
+import com.ming.eurekaclient.serivce.IOneStepStatckService;
 import com.ming.eurekaclient.serivce.ISortService;
 import com.ming.model.Book;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,8 +51,22 @@ public class FactoryController {
     }
 
 
-    private enum EnumSortType{
-        MergeSort(1),QuickSort(2),InsertSort(3),SelectionSort(4),HeapSort(5);
+    @Autowired
+    IOneStepStatckService oneStepStatckService;
+
+    @RequestMapping(value = "oneStack.do")
+    @ResponseBody
+    public void oneStack() {
+        int[] arr = {3, 4, 6, 7, 2, 1};
+        int[][] execute = oneStepStatckService.execute(1, arr);
+        for (int i = 0; i < execute.length; i++) {
+            System.out.println("{" + execute[i][0] + "," + execute[i][1] + "}");
+        }
+    }
+
+
+    private enum EnumSortType {
+        MergeSort(1), QuickSort(2), InsertSort(3), SelectionSort(4), HeapSort(5);
         private int value;
 
         EnumSortType(int value) {

@@ -1,6 +1,7 @@
 package com.ming.eurekaclient;
 
 import com.ming.eurekaclient.serivce.IFactorySerivce;
+import com.ming.eurekaclient.serivce.IOneStepStatckService;
 import com.ming.eurekaclient.serivce.ISortService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -33,6 +34,12 @@ public class FactoryBeanAppConfig {
     public ISortService sortService() throws Exception {
         MyBeanFactory<Object> objectMyBeanFactory = new MyBeanFactory<>(applicationContext, ISortService.class);
         return  (ISortService)objectMyBeanFactory .getObject();
+    }
+
+    @Autowired
+    public IOneStepStatckService oneStepStatckService() throws Exception {
+        MyBeanFactory<Object> objectMyBeanFactory = new MyBeanFactory<>(applicationContext, IOneStepStatckService.class);
+        return (IOneStepStatckService)objectMyBeanFactory.getObject();
     }
 
 }
