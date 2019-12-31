@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Random;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * Created by panyanming on 2019/9/6.
@@ -31,6 +33,7 @@ public class HomeController {
         for (Cookie cookie : cookies) {
             sb.append(cookie.getName() + "=" + cookie.getValue() + ";");
         }
+        Executors.newFixedThreadPool(1);
         String accessToken = request.getParameter("accessToken");
         return "hello world" + sb.toString() + "&accessToken=" + accessToken;
     }
